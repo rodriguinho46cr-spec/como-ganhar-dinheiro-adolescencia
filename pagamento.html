@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagamento | Como Ganhar Dinheiro</title>
+<style>
+:root{--bg:#080b0d;--card:#fff;--green:#8bd526;--green2:#4f8120;--text:#101417;--muted:#697174;--line:#dfe4e0;--soft:#edf5e8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+header{height:78px;background:#080b0d;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid #151a1d}
+.logo{font-weight:900;font-size:16px}.logo span{color:var(--green)}
+.back{color:#b7bdc0;text-decoration:none;font-size:14px}
+main{max-width:1050px;margin:auto;padding:45px 20px 70px}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:start}
+.card{background:var(--card);border-radius:16px;border:1px solid var(--line);padding:32px;box-shadow:0 15px 40px rgba(0,0,0,.18)}
+.kicker{color:#7aa93b;font-weight:800;font-size:12px;letter-spacing:.5px}
+h1{font-size:34px;line-height:1.1;margin:9px 0 14px}
+h2{font-size:22px;margin:0 0 18px}
+p{line-height:1.6;color:var(--muted)}
+.cover{width:190px;height:270px;margin:0 auto 28px;border-radius:7px;background:linear-gradient(150deg,#171c1f,#080a0c);border:1px solid #343b3e;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:12px 18px 30px #0003}
+.cover .money{font-size:35px;color:var(--green);margin-bottom:20px}
+.cover strong{font-size:25px;line-height:1.05}.cover b{color:var(--green)}
+.cover small{margin-top:18px;color:#aeb5b7;font-size:8px;letter-spacing:3px}
+.price{font-size:40px;font-weight:900;color:var(--green2);margin:18px 0}
+ul{list-style:none;padding:0;margin:20px 0}
+li{padding:9px 0;border-bottom:1px solid #edf0ee;color:#4f585b}
+li:last-child{border:0}
+label{display:block;font-size:13px;font-weight:800;margin:14px 0 7px}
+input{width:100%;height:48px;border:1px solid #cfd6d2;border-radius:8px;padding:0 13px;font-size:15px}
+input:focus{outline:0;border-color:#82c52b;box-shadow:0 0 0 3px #8bd52622}
+.methods{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:10px 0 18px}
+.method{border:1px solid #d3d9d5;border-radius:8px;padding:13px;text-align:center;font-weight:800;cursor:pointer}
+.method.active{border-color:var(--green);background:var(--soft)}
+.notice{background:#f5f7f5;border:1px solid #e0e5e1;border-radius:9px;padding:13px;font-size:12px;color:#687174;line-height:1.55;margin:18px 0}
+button.pay{width:100%;min-height:55px;border:0;border-radius:8px;background:var(--green);font-weight:900;font-size:16px;cursor:pointer}
+.security{text-align:center;font-size:11px;color:#8a9295;margin-top:12px}
+.legal{margin-top:25px}
+details{border-top:1px solid var(--line);padding:15px 0}
+summary{font-weight:800;cursor:pointer}
+footer{background:#050708;color:#8d9598;text-align:center;padding:28px 20px;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:#000b;align-items:center;justify-content:center;padding:20px;z-index:10}
+.modal.show{display:flex}
+.modalbox{background:#fff;border-radius:14px;padding:28px;max-width:430px;text-align:center}
+.modalbox button{border:0;border-radius:8px;padding:12px 20px}
+@media(max-width:760px){header{padding:0 20px}.layout{grid-template-columns:1fr}main{padding:25px 14px 45px}.card{padding:24px}h1{font-size:30px}.back{font-size:12px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index_responsivo_checkout.html">COMO <span>GANHAR</span> DINHEIRO</a>
+  <a class="back" href="index_responsivo_checkout.html">← Voltar ao site</a>
+</header>
+
+<main>
+  <div class="layout">
+    <section class="card">
+      <div class="cover">
+        <div class="money">$</div>
+        <strong>COMO<br><b>GANHAR</b><br>DINHEIRO</strong>
+        <small>NA ADOLESCÊNCIA</small>
+      </div>
+      <div class="kicker">ACESSO DIGITAL</div>
+      <h1>Curso Como Ganhar Dinheiro na Adolescência</h1>
+      <div class="price">R$ 19,90</div>
+      <p>Material educativo para aprender habilidades, criar ofertas, encontrar oportunidades e organizar os primeiros projetos.</p>
+      <h2>Você recebe</h2>
+      <ul>
+        <li>✓ PDF completo com 20 páginas</li>
+        <li>✓ Conteúdo prático e organizado</li>
+        <li>✓ Plano de 30 dias</li>
+        <li>✓ Checklist de próximos passos</li>
+        <li>✓ Material para estudar no seu ritmo</li>
+        <li>✓ Entrega digital após confirmação</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PAGAMENTO</div>
+      <h2>Finalize sua compra</h2>
+      <div class="price">R$ 19,90</div>
+
+      <label for="nome">Nome completo</label>
+      <input id="nome" autocomplete="name" placeholder="Seu nome">
+
+      <label for="email">E-mail</label>
+      <input id="email" type="email" autocomplete="email" placeholder="voce@email.com">
+
+      <label>Forma de pagamento</label>
+      <div class="methods">
+        <div class="method active" onclick="method(this)">PIX</div>
+        <div class="method" onclick="method(this)">Cartão</div>
+      </div>
+
+      <div class="notice">
+        <strong>Pagamento preparado para integração.</strong><br>
+        Conecte aqui o seu gateway de pagamento. Depois da confirmação, configure a automação para liberar o PDF ao comprador.
+      </div>
+
+      <button class="pay" onclick="pay()">PAGAR R$ 19,90</button>
+      <div class="security">🔒 Seus dados devem ser processados pelo provedor de pagamento integrado.</div>
+    </section>
+  </div>
+
+  <section class="card legal">
+    <h2>Termos e informações importantes</h2>
+    <details open>
+      <summary>Entrega do produto</summary>
+      <p>Após a confirmação do pagamento, a integração deverá liberar automaticamente o PDF ou o acesso à área de download.</p>
+    </details>
+    <details>
+      <summary>Privacidade</summary>
+      <p>Os dados do comprador devem ser tratados somente para processamento do pedido, comunicação e entrega, conforme a política de privacidade publicada pelo responsável.</p>
+    </details>
+    <details>
+      <summary>Termos de compra</summary>
+      <p>Este é um produto digital educativo. Antes de publicar, substitua este texto pelos seus Termos de Compra completos e pelas informações reais de suporte.</p>
+    </details>
+    <details>
+      <summary>Informação importante</summary>
+      <p>O curso não garante renda ou resultados financeiros. Resultados dependem de habilidade, esforço, oportunidades e contexto.</p>
+    </details>
+  </section>
+</main>
+
+<footer>COMO GANHAR DINHEIRO NA ADOLESCÊNCIA • Produto digital • R$ 19,90</footer>
+
+<div class="modal" id="modal">
+  <div class="modalbox">
+    <div class="kicker">CHECKOUT</div>
+    <h2>Gateway ainda não conectado</h2>
+    <p>A página de pagamento está pronta. Para cobrar de verdade, basta conectar um gateway e configurar a confirmação para liberar automaticamente o PDF.</p>
+    <button onclick="closeModal()">Fechar</button>
+  </div>
+</div>
+
+<script>
+function method(el){
+  document.querySelectorAll('.method').forEach(x=>x.classList.remove('active'));
+  el.classList.add('active');
+}
+function pay(){
+  const nome=document.getElementById('nome').value.trim();
+  const email=document.getElementById('email').value.trim();
+  if(!nome || !email){alert('Preencha seu nome e e-mail.');return;}
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show');}
+</script>
+</body>
+</html>
